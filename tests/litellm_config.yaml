@@ -2,4 +2,4 @@ model_list:
   - model_name: my-smart-model
     litellm_params:
       model: gemini/gemini-2.5-flash
-      api_key: os.environ/GEMINI_API_KEY
+      api_key: "os.environ/GEMINI_API_KEY" # 从环境变量读取 Key，安全防泄漏
